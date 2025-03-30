@@ -82,28 +82,28 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   useEffect(() => {
     let result = allData;
 
-    if (filters.endYear) {
+    if (filters.endYear && filters.endYear !== 'all') {
       result = result.filter(item => item.end_year?.toString() === filters.endYear);
     }
-    if (filters.topic) {
+    if (filters.topic && filters.topic !== 'all') {
       result = result.filter(item => item.topic === filters.topic);
     }
-    if (filters.sector) {
+    if (filters.sector && filters.sector !== 'all') {
       result = result.filter(item => item.sector === filters.sector);
     }
-    if (filters.region) {
+    if (filters.region && filters.region !== 'all') {
       result = result.filter(item => item.region === filters.region);
     }
-    if (filters.pestle) {
+    if (filters.pestle && filters.pestle !== 'all') {
       result = result.filter(item => item.pestle === filters.pestle);
     }
-    if (filters.source) {
+    if (filters.source && filters.source !== 'all') {
       result = result.filter(item => item.source === filters.source);
     }
-    if (filters.country) {
+    if (filters.country && filters.country !== 'all') {
       result = result.filter(item => item.country === filters.country);
     }
-    if (filters.city) {
+    if (filters.city && filters.city !== 'all') {
       result = result.filter(item => item.city === filters.city);
     }
 

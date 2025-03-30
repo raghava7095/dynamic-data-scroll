@@ -37,7 +37,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Years</SelectItem>
+                <SelectItem value="all">All Years</SelectItem>
                 {uniqueValues.endYears.map((year) => (
                   <SelectItem key={year} value={year}>{year}</SelectItem>
                 ))}
@@ -55,7 +55,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Topics</SelectItem>
+                <SelectItem value="all">All Topics</SelectItem>
                 {uniqueValues.topics.map((topic) => (
                   <SelectItem key={topic} value={topic}>{topic}</SelectItem>
                 ))}
@@ -73,7 +73,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Sectors</SelectItem>
+                <SelectItem value="all">All Sectors</SelectItem>
                 {uniqueValues.sectors.map((sector) => (
                   <SelectItem key={sector} value={sector}>{sector}</SelectItem>
                 ))}
@@ -91,7 +91,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Regions</SelectItem>
+                <SelectItem value="all">All Regions</SelectItem>
                 {uniqueValues.regions.map((region) => (
                   <SelectItem key={region} value={region}>{region}</SelectItem>
                 ))}
@@ -109,7 +109,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All PEST</SelectItem>
+                <SelectItem value="all">All PEST</SelectItem>
                 {uniqueValues.pestles.map((pestle) => (
                   <SelectItem key={pestle} value={pestle}>{pestle}</SelectItem>
                 ))}
@@ -127,7 +127,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Sources</SelectItem>
+                <SelectItem value="all">All Sources</SelectItem>
                 {uniqueValues.sources.map((source) => (
                   <SelectItem key={source} value={source}>{source}</SelectItem>
                 ))}
@@ -145,7 +145,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Countries</SelectItem>
+                <SelectItem value="all">All Countries</SelectItem>
                 {uniqueValues.countries.map((country) => (
                   <SelectItem key={country} value={country}>{country}</SelectItem>
                 ))}
@@ -163,7 +163,7 @@ const FilterPanel: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Cities</SelectItem>
+                <SelectItem value="all">All Cities</SelectItem>
                 {uniqueValues.cities.map((city) => (
                   <SelectItem key={city} value={city}>{city}</SelectItem>
                 ))}

@@ -2,6 +2,7 @@
 import { DataProvider } from '@/context/DataContext';
 import Dashboard from '@/components/Dashboard';
 import DashboardHeader from '@/components/DashboardHeader';
+import { Toaster } from '@/components/ui/toaster';
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
           <DashboardHeader />
           <Dashboard />
         </main>
+        <Toaster />
       </div>
     </DataProvider>
   );
