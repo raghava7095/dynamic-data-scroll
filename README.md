@@ -1,69 +1,71 @@
-# Welcome to your Lovable project
 
-## Project info
+# Data Visualization Dashboard
 
-**URL**: https://lovable.dev/projects/a690dd9a-dd24-4cda-84e0-866f07f6269b
+This is a comprehensive data visualization dashboard built with React and TypeScript. The dashboard displays various insights and trends from a dataset, with interactive charts and filtering capabilities.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Interactive charts showing relationships between key variables (intensity, likelihood, relevance)
+- Filtering options for all major variables (end year, topics, sector, region, PEST, source, country, city)
+- Responsive design for all screen sizes
+- Data tables for detailed information
 
-**Use Lovable**
+## Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a690dd9a-dd24-4cda-84e0-866f07f6269b) and start prompting.
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Visualization**: Recharts
+- **UI Components**: shadcn-ui
 
-Changes made via Lovable will be committed automatically to this repo.
+## Installation and Setup
 
-**Use your preferred IDE**
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Data Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The application uses a JSON dataset with the following key variables:
+- Intensity
+- Likelihood
+- Relevance
+- Year
+- Country
+- Topics
+- Region
+- City
+- Sector
+- PEST (Political, Economic, Social, Technological)
+- Source
 
-Follow these steps:
+## Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- `src/data/` - Contains the dataset
+- `src/context/` - Contains the data context for state management
+- `src/components/` - UI components including charts and filters
+- `src/components/charts/` - Individual chart components
+- `src/pages/` - Page components
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Dashboard Sections
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Overview** - Key metrics and statistics
+2. **Charts** - Visual representations of the data
+   - Intensity by Sector
+   - Likelihood Distribution
+   - Regional Distribution
+   - Topic Distribution
+   - Sector Comparison
+3. **Data Table** - Detailed view of filtered data
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Filtering Capabilities
 
-**Edit a file directly in GitHub**
+Users can filter the data by:
+- End Year
+- Topic
+- Sector
+- Region
+- PEST
+- Source
+- Country
+- City
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a690dd9a-dd24-4cda-84e0-866f07f6269b) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+All filters can be combined to drill down into specific subsets of the data.
